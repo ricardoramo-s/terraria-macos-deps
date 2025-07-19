@@ -1,4 +1,4 @@
-# Terraria macOS Dependency
+# Terraria macOS Dependencies
 
 Automates the retrieval and rebuilding of Terraria’s 64-bit (x86_64) runtime libraries, tuned for optimal performance and hassle-free setup on Apple-silicon (M-series) Macs. While aimed at smoother gameplay and developer quality-of-life, the custom libraries may introduce compatibility or functional deviations from the stock distribution.
 
@@ -126,5 +126,3 @@ Then re-run the script.
 
 This build script is released under the **MIT License**—see [LICENSE](LICENSE) for details.
 Individual third-party libraries retain their own licenses; consult each project’s repository.
-
----
