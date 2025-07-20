@@ -1,6 +1,6 @@
 #! /bin/sh
 
-WORK=./terraria-deps
+WORK=$(pwd)/terraria-deps
 INSTALL_ROOT="$WORK/install"
 CPPFLAGS="-I$INSTALL_ROOT/include"
 LDFLAGS="-L$INSTALL_ROOT/lib"
@@ -19,9 +19,9 @@ FORMULAE=(
   libvorbis
 )
 
-DESTDIR="$(pwd)/install/lib"
+DESTDIR="$WORK/install/lib"
 mkdir -p "$DESTDIR"
-chown -R "$(whoami)" "$WORK/install"
+chown -R $(whoami) "$WORK/install"
 
 arch -x86_64 /usr/local/bin/brew install "${FORMULAE[@]}"
 
